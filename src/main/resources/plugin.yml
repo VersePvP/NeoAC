@@ -1,0 +1,24 @@
+name: NeoVerse
+version: 1.7
+main: dev.tawny.Voit.VoitPlugin
+authors: [Tawny]
+description: NeoVerse AntiCheat
+
+commands:
+  neoverse:
+    description: Commands for VoitAC Anticheat.
+    usage: /neoverse
+    aliases: [NV]
+    permission: NeoVerse.commands
+  alerts:
+    description: toggle alerts
+    usage: /alerts
+    aliases:
+      - notify
+    permission: NeoVerse.alerts
+
+softdepend:
+  - ProtocolLib
+  - ProtocolSupport
+  - ViaVersion
+  - Geyser-Spigot

@@ -1,0 +1,65 @@
+api:
+  key: 'VoitAC'
+
+settings:
+  api: false
+  vpn: false
+
+clients:
+  enabled: false
+  sensitive: true
+  blocked:
+    - 'Vanilla'
+
+ghost-block:
+  enabled: true
+  mode: 'VoitAC'
+  strict: true
+  max-ms: 450
+
+alerts:
+  message: '&e&lNeoVerse&9&lAC &c%player% &7failed &9%check% %type% &7x%vl%'
+  click-command: '/teleport %player%'
+  clear-violations-delay: 15
+  console: true
+  log: false
+  log-format: '&e&lNeoVerse&9&lAC &c%player% &7failed &9%check% %type% &7x%vl%'
+
+discord:
+  enabled: false
+  ban-message: false
+  name: 'AntiCheat'
+  image: 'https://ibb.co/5GcBYB9'
+  url: 'https://discordapp.com/api/webhooks/925820999075774515/G0BVuFnckLvEkVA3ymKR13xWm_v_dNWyUzycQn196m7WwBFRda9Lo5kLSJ-DuokhoEva'
+  banurl: 'https://discordapp.com/api/webhooks/925820999075774515/G0BVuFnckLvEkVA3ymKR13xWm_v_dNWyUzycQn196m7WwBFRda9Lo5kLSJ-DuokhoEva'
+
+messages:
+  prefix: '&7&l[&e&lNeoVerse&9&lAC&7&l] '
+  alerts-on: '&7&l[&e&lNeoVerse&9&lAC] &aAlerts toggled &aOn'
+  alerts-off: '&7&l[&e&lNeoVerse&9&lAC] &cAlerts toggled &cOff'
+  vpn-kick: '&7&l[&e&lNeoVerse&9&lAC] &cVpns are blacklisted on this server!'
+  payload-kick: '&7&l[&e&lNeoVerse&9&lAC] &cYou were kicked for invalid payloads!'
+  anticrash-kick: '&7&l[&e&lNeoVerse&9&lAC] &cYou were kicked for crasher/exploits!'
+  antiexploit-alert: '&e&lNeoVerse&9&lAC AntiExploit&7» &c%player% &7failed &c%check% &7&l[&d%info%&7&l]'
+  banning: '&7&l[&e&lNeoVerse&9&lAC] &dBanning %player%'
+  join-message: '&7&l[&e&lNeoVerse&9&lAC] &7%player% &djoined with &6%client%'
+  client-kick: '&7&l[&e&lNeoVerse&9&lAC] &cThis client isnt supported!'
+  vanish-on: '&7&l[&e&lNeoVerse&9&lAC] &dVanish toggled &aOn'
+  vanish-off: '&7&l[&e&lNeoVerse&9&lAC] &dVanish toggled &cOff'
+  kb-test: '&7&l[&e&lNeoVerse&9&lAC] &dYou just launched &c%player%'
+  scare-cmd: '&7&l[&e&lNeoVerse&9&lAC] &dYou just scared &c%player%'
+
+bans:
+  enabled: true
+  timer: false
+  time: 3
+  first-commands:
+    - 'kick %player% &7&l[&e&lNeoVerse&9&lAC&7&l] &cCheating'
+    - ''
+  timer-commands:
+    - ''
+    - ''
+
+broadcast:
+  enabled: true
+  message: '%nl% &7&l[&e&lNeoVerse&9&lAC&7&l] &7%player% &cWas punished for &c&lCheating! %nl%'
